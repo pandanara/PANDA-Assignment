@@ -551,6 +551,8 @@ footer{
 .footer-dood{
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 footer a{
@@ -569,7 +571,11 @@ footer a{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    font-size: 15px;
+    font-size: 1.1rem;
+}
+
+.egnee2 h4{
+    font-size: 1.3rem;
 }
 
 .egnee2 ul{
@@ -583,8 +589,13 @@ footer a{
 }
 
 .input{
-    border-radius: 50%;
-    padding: 10px; 
+    border-radius: 40px;
+    padding: 20px; 
+    width: 80%;
+}
+
+.input-title{
+    font-size: 1.2rem;
 }
 
 .sub{
@@ -596,6 +607,7 @@ footer a{
     width: 150px;
     text-align: center;
     font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 .INPUT h4{
@@ -604,14 +616,7 @@ footer a{
 
 .footer-dood p{
     font-size: 15px;
-}
-
-.neg h4{
-    font-size: 17px;
-}
-
-.hoyor h4{
-    font-size: 17px;
+    align-self: center;
 }
 
 .footer-deed h4{
@@ -620,4 +625,42 @@ footer a{
 
 .socialMedia{
     font-size: 1.5rem;
+    word-spacing: 10px;
+}
+
+.footer-dood .term a{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.footer-dood .term{
+    align-self: center;
+}
+
+footer{
+    position: relative;
+}
+
+.footer::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0px;
+    width: 45px;
+    height: 120px;
+    background-color: #F58A07;
+    border-top-right-radius: 20px;
+}
+
+.footer::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 40px;
+    width: 45px;
+    height: 250px;
+    background-color: #F58A07;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }

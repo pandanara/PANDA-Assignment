@@ -481,11 +481,15 @@ a{
     color: #F58A07;
 }
 
-.Director img{
+.director-profile-img{
     width: 100px;
     height: 100px;
-    position: relative;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.Director .director-profile-img img{
+    width: 100%;
 }
 
 /* ================================================= */
@@ -623,9 +627,13 @@ footer a{
     margin-top: 0%;
 }
 
-.socialMedia{
-    font-size: 1.5rem;
-    word-spacing: 10px;
+.socialMedia a{
+    padding: 0 1rem;
+    font-size: 1.25rem;
+}
+
+.socialMedia a:first-child{
+    padding-left: 0;
 }
 
 .footer-dood .term a{

@@ -785,6 +785,7 @@ footer{
 
 .aguulga-2{
     display: flex;
+    position: relative;
 }
 
 .aguulga2{
@@ -820,10 +821,13 @@ footer{
     filter: grayscale(1); 
 }
 
-.aguulga2-zurag::after{
+.aguulga2::after{
     position: absolute;
     content: '';
-    inset: 10% 90% 70% -10%;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 50px;
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;

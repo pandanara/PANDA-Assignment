@@ -1537,7 +1537,8 @@ footer{
     margin-right: 60px;
 }
 
-.lastpage-baruun{
+.map-deed{
+    display: flex;
 }
 
 .map-heseg{

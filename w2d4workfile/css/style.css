@@ -12,6 +12,8 @@ body{
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 a{
@@ -28,6 +30,8 @@ a{
 
 .col-3{
     width: calc(100%/3 - 40px);
+    flex-basis: 350px;
+    flex-grow: 1;
 }
 
 .gap{
@@ -247,6 +251,10 @@ NAVIGATION
     padding-bottom: 30px;
 }
 
+.post-1-title p{
+    padding-top: 10px;
+}
+
 .post-1-title h2{
     color: #1D3444;
     font-size: 2rem;
@@ -261,6 +269,7 @@ NAVIGATION
     background-color: white;
     border-radius: 40px;
     padding: 20px;
+    height: 260px;
 }
 
 .solution-card p{
@@ -357,6 +366,7 @@ NAVIGATION
     border-radius: 40px;
     padding: 10px 15px;
     text-align: center;  
+    margin-right: 20px;
 }
 
 .post3-btn a:hover{
@@ -511,7 +521,8 @@ NAVIGATION
 }
 
 .director .director-profile-img img{
-    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
 }
 
 /* ================================================= */
@@ -532,13 +543,28 @@ NAVIGATION
     height: 100%;
 }
 
+.post-types{
+    display: flex;
+    height: 100%;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    /* padding: 20px; */
+    
+}
+
 .lastest{
-    background-color: white;
     border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .lastest a{
     color: #F58A07;
+}
+
+.hello{
+    margin-top: auto;
 }
 
 .lastest a::after{
@@ -827,7 +853,7 @@ footer{
     width: 100px;
     height: 100px;
     left: -50px;
-    top: 50px;
+    top: 150px;
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;
@@ -848,6 +874,7 @@ footer{
 
 .aguulga-3{
     display: flex;
+    position: relative;
 }
 
 .aguulga3{
@@ -877,10 +904,13 @@ footer{
     filter: grayscale(1);  
 }
 
-.aguulga3-zurag::after{
+.aguulga-3::after{
     position: absolute;
     content: '';
-    inset: 60% -10% 20% 90%;
+    width: 100px;
+    height: 100px;
+    right: -50px;
+    top: 200px;
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;
@@ -902,6 +932,7 @@ footer{
 
 .aguulga-4{
     display: flex;
+    position: relative;
 }
 
 .aguulga4{
@@ -936,10 +967,13 @@ footer{
     filter: grayscale(1);  
 }
 
-.aguulga4-zurag::after{
+.aguulga-4::after{
     position: absolute;
     content: '';
-    inset: 40% 90% 40% -10%;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 200px;
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;
@@ -961,6 +995,7 @@ footer{
 
 .aguulga-5{
     display: flex;
+    position: relative;
 }
 
 .aguulga5{
@@ -990,10 +1025,13 @@ footer{
     filter: grayscale(1);  
 }
 
-.aguulga5-zurag::after{
+.aguulga-5::after{
     position: absolute;
     content: '';
-    inset: 60% -10% 20% 90%;
+    width: 100px;
+    height: 100px;
+    right: -50px;
+    top: 300px;
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;
@@ -1015,6 +1053,7 @@ footer{
 
 .aguulga-6{
     display: flex;
+    position: relative;
 }
 
 .aguulga6{
@@ -1053,10 +1092,13 @@ footer{
     filter: grayscale(1);  
 }
 
-.aguulga6-zurag::after{
+.aguulga-6::after{
     position: absolute;
     content: '';
-    inset: 60% 90% 20% -10%;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 300px;
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 20px;
@@ -1165,15 +1207,13 @@ footer{
 
 .pos-deed{
     display: flex;
-    width: max-content;
     /* margin: 0; */
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .pos-dood{
     display: flex;
     /* align-self: flex-end; */
-    width: max-content;
     /* margin: 0; */
 }
 
@@ -1185,12 +1225,14 @@ footer{
     border-radius: 20px;
     background-color: #eef7ff;
     padding: 20px 100px 20px 50px;
+    box-sizing: border-box;
 }
 
 .pos-dood .pos{
     border-radius: 20px;
     background-color: #eef7ff;
     padding: 20px 100px 20px 50px;
+    box-sizing: border-box;
 }
 
 /* ================================================= */
@@ -1307,23 +1349,33 @@ footer{
 
 .medee-jijig-zurag{
     display: flex;
-    width: 100%;
-}
-
-.medee-jijig-zurag img{
-    border-radius: 50%;
     width: 45px;
     height: 40px;
 }
 
-.medee-zurag{
+.medee-jijig-zurag img{
     width: 100%;
+    border-radius: 50%;
+}
+
+.medee-zurag{
+    border-radius: 40px;
+    width: 1280px;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.pretty{
+    display: flex;
+    align-items: center;
+}
+
+.pretty p{
+    padding-left: 20px;
 }
 
 .medee-zurag img{
-    border-radius: 40px;
-    width: 1280px;
-    height: 600px; 
+    width: 100%;
 }
 
 .medee{
@@ -1354,11 +1406,6 @@ footer{
 /* PAGE-6-SECTION-1 */
 /* ================================================= */
 
-.testing{
-    display: flex;
-}
-
-
 .testing h2{
     font-size: 2.5rem;
     color: #063255;
@@ -1382,22 +1429,25 @@ footer{
 .test-baruun{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    padding-left: 200px;
 }
 
 .test-details{
     /* display: flex; */
     background-color: #eef7ff;
     border-radius: 20px;
+    margin-top: 60px;
 }
 
 .test-btn{
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
 
 .test-btn a{
     color: #1D3444;
+    padding: 10px;
 }
 
 .test-btn a:hover{
@@ -1408,12 +1458,12 @@ footer{
     display: flex;
     flex-direction: column;
     padding-left: 60px;
+
 }
 
 .test-details{
     display: flex;
     padding: 50px;
-    width: 1280px;
 }
 
 /* ================================================= */
@@ -1450,7 +1500,7 @@ footer{
     border: none;
     border-radius: 40px;
     background-color: #f5f8f8; 
-    padding: 20px 1280px 200px 30px;   
+    padding: 20px 1085px 200px 30px;   
     font-size: 1.1rem;
     color: #8f8d8d;
     margin: 10px 10px 10px 0;
@@ -1488,11 +1538,10 @@ footer{
 }
 
 .lastpage-baruun{
-    /* display: flex;
-    flex-direction: row; */
 }
 
 .map-heseg{
+    margin-top: 50px;
 }
 
 .map{
